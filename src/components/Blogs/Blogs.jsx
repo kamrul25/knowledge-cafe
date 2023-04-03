@@ -11,7 +11,7 @@ const Blogs = () => {
           .then(data => setBlogs(data))
     }, [])
     return (
-        <div>
+        <div className='blogs-container'>
             {
                 blogs.map(blog => <SingleBlog
                 key={blog.id}
