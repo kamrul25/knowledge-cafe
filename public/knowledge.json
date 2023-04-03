@@ -1,0 +1,38 @@
+[
+    {
+        "id": "124e13b9-2d54-4b2f-a74d-a77b362d6ead",
+        "authorName":"Mr. Raju",
+        "authorImage":"https://img.freepik.com/free-photo/handsome-mature-businessman-looking-confident-smiling_176420-31691.jpg?size=626&ext=jpg&ga=GA1.2.807519568.1680467624&semt=sph",
+        "blogTitle":"How to get your first job as a self-taught programmer",
+        "blogImage":"https://img.freepik.com/free-vector/programming-code-writing-isometric-icon-software-development-laptop-with-text-program-code_39422-887.jpg?w=740&t=st=1680467846~exp=1680468446~hmac=bccfea15aa855aea584772889ca4ef92f466731a3b316888a66e07efb7199d0b",
+        "readTime":"05",
+        "publishDate":"Mar 14 (4 Days ago)"
+    },
+    {
+        "id": "13cbc7ed-a61b-4883-9d42-82d7d8642b86",
+        "authorName":"Mrs. Setara",
+        "authorImage":"https://img.freepik.com/free-photo/thoughtful-businessman-sitting-office-desk-writing-trying-think-up-idea-squinting-as-pondering-new-content_176420-15902.jpg?size=626&ext=jpg&ga=GA1.2.807519568.1680467624&semt=sph",
+        "blogTitle":"How to start programming as a self-taught programmer",
+        "blogImage":"https://img.freepik.com/premium-photo/various-computer-equipment-with-programming-code-screens-table-dark-room-cyber-security-concept-copy-space_236854-23136.jpg?w=740",
+        "readTime":"10",
+        "publishDate":"Mar 14 (4 Days ago)"
+    },
+    {
+        "id": "307f166f-1d04-4573-bc37-2f461ea9d4f7",
+        "authorName":"Mina Mostofa",
+        "authorImage":"https://img.freepik.com/premium-photo/smiling-freelancer-copywriter-using-laptop-working-from-home_219285-131.jpg?size=626&ext=jpg&ga=GA1.1.807519568.1680467624&semt=sph",
+        "blogTitle":"Master Microsoft Power Platform and Become an In-Demand!",
+        "blogImage":"https://img.freepik.com/premium-photo/various-computer-equipment-with-programming-code-screens-table-dark-room-cyber-security-concept-copy-space_236854-23136.jpg?w=740",
+        "readTime":"12",
+        "publishDate":"Mar 14 (4 Days ago)"
+    },
+    {
+        "id": "4bf9798f-63bc-4a83-b0c6-6a3b816fe922",
+        "authorName":"Mrs. Hasan",
+        "authorImage":"https://img.freepik.com/free-photo/handsome-young-businessman-working-office_1301-3916.jpg?size=626&ext=jpg&ga=GA1.1.807519568.1680467624&semt=sph",
+        "blogTitle":"Best and most efficient way to learn programming language ",
+        "blogImage":"https://img.freepik.com/free-vector/gradient-isometric-laptop-technology-background_52683-6158.jpg?w=740&t=st=1680467711~exp=1680468311~hmac=4e2df57bb767f844016a2df8a0e1c9dd711f24236ba6f1587197826df312f753",
+        "readTime":"15",
+        "publishDate":"Mar 14 (4 Days ago)"
+    }
+]
