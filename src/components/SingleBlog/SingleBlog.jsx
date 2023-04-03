@@ -1,6 +1,7 @@
 import React from "react";
 import "./SingleBlog.css";
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBookmark, faCoffee } from '@fortawesome/free-solid-svg-icons';
 const SingleBlog = ({ blog }) => {
   const {
     blogImage,
@@ -22,7 +23,8 @@ const SingleBlog = ({ blog }) => {
               <p >{publishDate}</p>
             </div>
           </div>
-           <p>{readTime} min read</p>
+           <p>{readTime} min read  <FontAwesomeIcon icon={faBookmark} />
+           </p>
         </div>
         <h1 className="blog-title">{blogTitle}</h1>
         <p>#beginners  #programming</p>
