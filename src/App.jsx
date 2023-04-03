@@ -1,8 +1,7 @@
-import './App.css'
-import Blogs from './components/Blogs/Blogs'
-import Blog from './components/Blogs/Blogs'
-import Header from './components/Header/Header'
-import SideCard from './components/SideCard/SideCard'
+import './App.css';
+import Blogs from './components/Blogs/Blogs';
+import Header from './components/Header/Header';
+import SideCard from './components/SideCard/SideCard';
 
 function App() {
 
