@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import './Blogs.css';
 import SingleBlog from '../singleBlog/SingleBlog';
 
-const Blogs = () => {
+const Blogs = ({handelReadTime,handleBlogTitle}) => {
     const [blogs, setBlogs] = useState([]);
 
     useEffect(() => {
@@ -16,6 +16,8 @@ const Blogs = () => {
                 blogs.map(blog => <SingleBlog
                 key={blog.id}
                 blog={blog}
+                handelReadTime={handelReadTime}
+                handleBlogTitle={handleBlogTitle}
                 ></SingleBlog>)
             }
             

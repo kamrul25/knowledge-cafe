@@ -2,7 +2,7 @@ import React from "react";
 import "./SingleBlog.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBookmark, faCoffee } from '@fortawesome/free-solid-svg-icons';
-const SingleBlog = ({ blog }) => {
+const SingleBlog = ({ blog, handelReadTime, handleBlogTitle }) => {
   const {
     blogImage,
     authorImage,
@@ -23,12 +23,12 @@ const SingleBlog = ({ blog }) => {
               <p >{publishDate}</p>
             </div>
           </div>
-           <p>{readTime} min read  <FontAwesomeIcon icon={faBookmark} />
+           <p>{readTime} min read  <FontAwesomeIcon icon={faBookmark} onClick={() => handelReadTime(readTime)} />
            </p>
         </div>
         <h1 className="blog-title">{blogTitle}</h1>
         <p>#beginners  #programming</p>
-        <a href="">Mark as read</a>
+        <a href="#" onClick={() => handleBlogTitle(blogTitle)}>Mark as read</a>
       </div>
       <div className="blog-divider"></div>
     </div>

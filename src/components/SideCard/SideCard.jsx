@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './SideCard.css';
 
-const SideCard = () => {
+const SideCard = ({totalTime}) => {
     return (
-        <div>
-            Hi I am from side card
+        <div className="side-card">
+            <div className="total-read-time">
+                 Spent time on read :{totalTime} min
+            </div>
         </div>
     );
 };
