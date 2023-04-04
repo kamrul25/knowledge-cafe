@@ -8,25 +8,28 @@ import Question from './components/Question/Question';
 function App() {
   const [totalTime, setTotalTime] = useState(0);
   const [titles, setTitles] = useState([]);
+  const [id, setId] = useState("");
   
-  const handelReadTime = (readTime) =>{
-    const previousTime = JSON.parse(localStorage.getItem("spentTime"))
-    if(previousTime){
-      const newTime = previousTime + parseFloat(readTime);
-      localStorage.setItem("spentTime", newTime);
+  const handelReadTime = (readTime ) =>{
+    if(totalTime){
+      const newTime = totalTime + parseFloat(readTime);
       setTotalTime(newTime);
     }
     else{
       const newTime = parseFloat(readTime);
-      localStorage.setItem("spentTime", newTime);
       setTotalTime(newTime)
     }
+
   }
+
+
   let allTitles = [];
-  const handleBlogTitle = (blogTitle) =>{
-    allTitles.push(blogTitle);
+  const handleBlogTitle = (blogTitle ,id) =>{
+    allTitles.push(...titles, blogTitle);
     setTitles(allTitles);
+    setId(id);
   }
+
 
   return (
     <div className="App">
@@ -40,7 +43,7 @@ function App() {
           ></Blogs>
         </div>
         <div >
-            <SideCard totalTime={totalTime} titles={titles}></SideCard>
+            <SideCard  totalTime={totalTime} titles={titles}></SideCard>
         </div>
       </div>
 

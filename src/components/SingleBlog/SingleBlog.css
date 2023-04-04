@@ -37,14 +37,20 @@
   border: 1px solid rgba(17, 17, 17, 0.1);
 }
 
-.singleBlog p {
+.single-para {
   font-weight: 500;
   font-size: 20px;
   color: rgba(17, 17, 17, 0.6);
 }
-.author-info p{
-    font-weight: 600;
-    font-size: 16px;
+.author-info p {
+  font-weight: 600;
+  font-size: 16px;
+}
+#mark-time {
+  font-weight: 600;
+  font-size: 20px;
+  color: #6047ec;
+  text-decoration: underline;
 }
 
 @media screen and (max-width: 576px) {

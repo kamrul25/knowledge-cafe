@@ -2,8 +2,10 @@ import React from "react";
 import "./SingleBlog.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBookmark, faCoffee } from '@fortawesome/free-solid-svg-icons';
+
 const SingleBlog = ({ blog, handelReadTime, handleBlogTitle }) => {
   const {
+    id,
     blogImage,
     authorImage,
     authorName,
@@ -20,15 +22,15 @@ const SingleBlog = ({ blog, handelReadTime, handleBlogTitle }) => {
             <img src={authorImage} alt="" className="authorImage"/>
             <div>
               <h2>{authorName}</h2>
-              <p >{publishDate}</p>
+              <p className="single-para">{publishDate}</p>
             </div>
           </div>
-           <p>{readTime} min read  <FontAwesomeIcon icon={faBookmark} onClick={() => handleBlogTitle(blogTitle)} />
+           <p className="single-para">{readTime} min read  <FontAwesomeIcon icon={faBookmark} onClick={() => handleBlogTitle(blogTitle ,id)} />
            </p>
         </div>
         <h1 className="blog-title">{blogTitle}</h1>
-        <p>#beginners  #programming</p>
-        <p onClick={() => handelReadTime(readTime)}>Mark as read</p>
+        <p className="single-para">#beginners  #programming</p>
+        <p id="mark-time" onClick={() => handelReadTime(readTime)}>Mark as read</p>
       </div>
       <div className="blog-divider"></div>
     </div>
