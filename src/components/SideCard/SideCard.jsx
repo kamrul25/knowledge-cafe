@@ -10,7 +10,7 @@ const SideCard = ({ totalTime, titles }) => {
         <h2 className="total-bookmarked">Bookmarked Blogs:{titles.length} </h2>
 
         {titles.map((title) => (
-          <Title  title={title}></Title>
+          <Title key={title.id} title={title}></Title>
         ))}
       </div>
     </div>

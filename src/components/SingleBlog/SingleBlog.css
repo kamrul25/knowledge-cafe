@@ -51,6 +51,8 @@
   font-size: 20px;
   color: #6047ec;
   text-decoration: underline;
+  border: 0;
+  background-color: #FFFFFF;
 }
 
 @media screen and (max-width: 576px) {

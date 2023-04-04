@@ -14,7 +14,9 @@
   grid-template-columns: 3fr 1fr;
   column-gap: 4px;
 }
-
+.side-card-container{
+  position: sticky;
+}
 @media screen  and (max-width: 576px){
   .container{
     grid-template-columns: 1fr;

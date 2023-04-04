@@ -25,12 +25,12 @@ const SingleBlog = ({ blog, handelReadTime, handleBlogTitle }) => {
               <p className="single-para">{publishDate}</p>
             </div>
           </div>
-           <p className="single-para">{readTime} min read  <FontAwesomeIcon icon={faBookmark} onClick={() => handleBlogTitle(blogTitle ,id)} />
+           <p className="single-para">{readTime} min read  <FontAwesomeIcon icon={faBookmark} onClick={() => handleBlogTitle(blog ,id)} />
            </p>
         </div>
         <h1 className="blog-title">{blogTitle}</h1>
         <p className="single-para">#beginners  #programming</p>
-        <p id="mark-time" onClick={() => handelReadTime(readTime)}>Mark as read</p>
+        <button id="mark-time" onClick={() => handelReadTime(readTime)}>Mark as read</button>
       </div>
       <div className="blog-divider"></div>
     </div>

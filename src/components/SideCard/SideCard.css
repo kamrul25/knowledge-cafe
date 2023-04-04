@@ -1,5 +1,6 @@
 .side-card {
   position: sticky;
+  /* position: relative; */
   top: 10px;
   width: 411px;
 }

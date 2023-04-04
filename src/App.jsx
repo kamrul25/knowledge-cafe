@@ -5,10 +5,12 @@ import Header from './components/Header/Header';
 import SideCard from './components/SideCard/SideCard';
 import Question from './components/Question/Question';
 
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 function App() {
   const [totalTime, setTotalTime] = useState(0);
   const [titles, setTitles] = useState([]);
-  const [id, setId] = useState("");
   
   const handelReadTime = (readTime ) =>{
     if(totalTime){
@@ -24,17 +26,21 @@ function App() {
 
 
   let allTitles = [];
-  const handleBlogTitle = (blogTitle ,id) =>{
-    allTitles.push(...titles, blogTitle);
+  const handleBlogTitle = (blog ,id) =>{
+    allTitles.push(...titles, blog);
     setTitles(allTitles);
-    setId(id);
+
+    const existTitle = titles.find( t => t.id === id);
+    if(existTitle){
+      toast("You Have Already Bookmarked This Blog!!!");
+    }
   }
 
 
   return (
     <div className="App">
       <Header></Header>
-      <div className='divider'> </div>
+      <div className="divider"> </div>
 
       <div className="container">
         <div >
@@ -42,8 +48,8 @@ function App() {
           handleBlogTitle={handleBlogTitle}
           ></Blogs>
         </div>
-        <div >
-            <SideCard  totalTime={totalTime} titles={titles}></SideCard>
+        <div className="side-card-container">
+            <SideCard  totalTime={totalTime} titles={titles}></SideCard> <ToastContainer/>
         </div>
       </div>
 
