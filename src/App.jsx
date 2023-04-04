@@ -3,23 +3,29 @@ import './App.css';
 import Blogs from './components/Blogs/Blogs';
 import Header from './components/Header/Header';
 import SideCard from './components/SideCard/SideCard';
+import Question from './components/Question/Question';
 
 function App() {
   const [totalTime, setTotalTime] = useState(0);
+  const [titles, setTitles] = useState([]);
   
   const handelReadTime = (readTime) =>{
-    if(totalTime){
-      const newTime = totalTime + parseFloat(readTime);
+    const previousTime = JSON.parse(localStorage.getItem("spentTime"))
+    if(previousTime){
+      const newTime = previousTime + parseFloat(readTime);
+      localStorage.setItem("spentTime", newTime);
       setTotalTime(newTime);
     }
     else{
       const newTime = parseFloat(readTime);
+      localStorage.setItem("spentTime", newTime);
       setTotalTime(newTime)
     }
   }
-
+  let allTitles = [];
   const handleBlogTitle = (blogTitle) =>{
-    console.log(blogTitle)
+    allTitles.push(blogTitle);
+    setTitles(allTitles);
   }
 
   return (
@@ -34,10 +40,12 @@ function App() {
           ></Blogs>
         </div>
         <div >
-            <SideCard totalTime={totalTime}></SideCard>
+            <SideCard totalTime={totalTime} titles={titles}></SideCard>
         </div>
       </div>
-    </div>
+
+        <Question></Question>
+   </div>
   )
 }
 

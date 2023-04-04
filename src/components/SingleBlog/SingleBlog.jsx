@@ -23,12 +23,12 @@ const SingleBlog = ({ blog, handelReadTime, handleBlogTitle }) => {
               <p >{publishDate}</p>
             </div>
           </div>
-           <p>{readTime} min read  <FontAwesomeIcon icon={faBookmark} onClick={() => handelReadTime(readTime)} />
+           <p>{readTime} min read  <FontAwesomeIcon icon={faBookmark} onClick={() => handleBlogTitle(blogTitle)} />
            </p>
         </div>
         <h1 className="blog-title">{blogTitle}</h1>
         <p>#beginners  #programming</p>
-        <a href="#" onClick={() => handleBlogTitle(blogTitle)}>Mark as read</a>
+        <p onClick={() => handelReadTime(readTime)}>Mark as read</p>
       </div>
       <div className="blog-divider"></div>
     </div>

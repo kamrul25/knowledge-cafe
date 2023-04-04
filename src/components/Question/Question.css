@@ -1,0 +1,28 @@
+
+.question-container{
+    width: 800px;
+    height: auto;
+    margin: 20px 0;
+    background: rgba(17, 17, 17, 0.05);
+    border-radius: 8px;
+    padding: 30px;
+}
+.question{
+    font-weight: 700;
+    font-size: 30px;
+    color: #111111;
+}
+.answer-card{
+    background: #FFFFFF;
+    border-radius: 8px;
+}
+.answer-card p{
+    padding: 20px;
+}
+@media screen  and (max-width: 576px){
+    .question-container{
+      width: 95%;
+      margin: 0 auto;
+    }
+  }
+

@@ -1,9 +1,9 @@
-.side-card{
+.side-card {
   position: sticky;
   top: 10px;
+  width: 411px;
 }
 .total-read-time {
-  width: 411px;
   height: 80px;
   font-weight: 700;
   font-size: 24px;
@@ -15,12 +15,39 @@
   border-radius: 8px;
 }
 
-@media screen and (max-width: 576px){
-  .total-read-time{
+.title-container {
+  margin-top: 24px;
+  background: rgba(17, 17, 17, 0.05);
+  border-radius: 8px;
+  padding: 30px;
+}
+.total-bookmarked {
+  font-weight: 700;
+  font-size: 24px;
+  color: #111111;
+}
+.title-card{
+background: #FFFFFF;
+border-radius: 8px;
+}
+.title-card h3{
+  padding: 20px;
+}
+
+@media screen and (max-width: 576px) {
+  .side-card {
     width: 95%;
     margin: 0 auto;
+  }
+  .total-read-time {
     font-size: 50px;
     padding: 20px 0;
     margin-bottom: 30px;
+  }
+  .total-bookmarked {
+    font-size: 36px;
+  }
+  .title-card h3{
+    font-size: 32px;
   }
 }
